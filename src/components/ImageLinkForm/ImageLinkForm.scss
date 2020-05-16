@@ -1,0 +1,44 @@
+.link-form{
+    padding: 30px;
+    align-self: flex-start;
+
+    .form-wrapper{
+        display: flex;
+        margin: auto;
+        margin-top: 30px;
+        max-width: 600px;
+        width: 100%;
+
+        .input, button{
+            padding: 10px 10px;
+            width: 80%;
+            border: 0;
+            background: none;
+        }
+
+        .input{
+            border-bottom: 1px solid #eeefff20;
+            color: #eeefff;
+
+            &::placeholder{
+                color: #eeefff30;
+            }
+        }
+
+        button{
+            width: 20%;
+            font-size: .75em;
+            color: #eeefff90;
+            text-transform: uppercase;
+            cursor: pointer;
+            background: #efefef00;
+            transition: all .2s ease-in;
+
+            &:hover{
+                color: #eeefff;
+                background: #efefef20;
+                transition: all .1s ease-in;
+            }
+        }
+    }
+}

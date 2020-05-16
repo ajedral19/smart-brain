@@ -1,0 +1,16 @@
+.navigation{
+    display: flex;
+    justify-content: flex-end;
+
+    .nav-link{
+        font-size: .85em;
+        padding: 5px;
+        text-decoration: underline;
+        cursor: pointer;
+
+        &:hover{
+            text-decoration: none;
+            color: #fffeee95;
+        }
+    }
+}

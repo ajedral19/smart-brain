@@ -1,0 +1,31 @@
+.rank{
+    background: #2e2e2e20;
+    padding: 10px 30px;
+    margin: 0;
+    align-self: flex-start;
+    display: grid;
+    gap: 0;
+    grid-template-columns: 6fr 1fr;
+
+    h3{
+        justify-self: self-start;
+        align-self: center;
+    }
+
+    .rank-value{
+        justify-self: self-end;
+        font-size: 2em;
+        font-weight: 600;
+        position: relative;
+
+        &::before{
+            content: '#';
+            font-size: .5em;
+            position: absolute;
+            top: 6px;
+            left: -10px;
+            display: block;
+            
+        }
+    }
+}

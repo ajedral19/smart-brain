@@ -1,0 +1,22 @@
+.logo-wrapper{
+    .logo{
+        display: flex;
+        // background: #efefef20;
+        justify-content: flex-start;
+        align-items: center;
+
+        &:hover{
+            cursor: pointer;
+        }
+
+        .logo-inner{
+            padding: 20px;
+            width: 50px;
+            align-self: flex-start;
+            img{
+                width: 100%;
+                filter: invert(1);
+            }
+        }
+    }
+}

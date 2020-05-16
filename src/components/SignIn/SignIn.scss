@@ -1,0 +1,167 @@
+.form-block{
+    margin-top: 60px!important;
+    margin-bottom: 60px!important;
+
+    padding: 30px;
+    max-width: 300px;
+    margin: auto;
+    // background: #efefef30;
+    box-shadow: 0px 0px 20px -10px rgba(0,0,0,0.75);
+    border-radius: 10px;
+    color: #fefefe;
+
+    .form{
+        fieldset{
+            border: none;
+            text-align: left;
+
+            legend{
+                font-size: 1.5em;
+                font-weight: 100;
+                width: 100%;
+            }
+
+            span.line{
+                &::after{
+                    display: block;
+                    margin: 15px 0;
+                    content: '';
+                    width: 60px;
+                    height: 1px;
+                    background: #fefefe60;
+                }
+            }
+
+            .field{
+                display: grid;
+                gap: 5px;
+                grid-template-columns: 1fr;
+                padding: 10px 0;
+
+                label{
+                    font-size: .8em;
+                    font-weight: 100;
+                }
+
+                input{
+                    padding: 10px 10px;
+                    border: 1px solid #1e1e1e;
+                    font-weight: 600;
+                    color: #2a2a2a;
+
+                    &::placeholder{
+                        font-weight: 100;
+                        opacity: .6;
+                        letter-spacing: 0;    
+                    }
+
+                    &:focus, &:hover{
+                        border: 1px solid #fefefe;
+                        background: #1e1e1e;
+                        color: #fefefe;
+
+                    }
+                }
+
+                .pword{
+                    letter-spacing: 3px;
+                }
+            }
+            .c-box{
+                position: relative;
+                font-size: .8em;
+                line-height: 0;
+                padding-left: 20px;
+                cursor: pointer;
+
+                .c-box-input{
+                    position: absolute;
+                    width: 15px;
+                    height: 15px;
+                    left: 0;
+                    top: 2px;
+                    border-radius: 4px;
+                    box-shadow: inset 0 1px 3px rgba(0,0,0,.1);
+                    cursor: pointer;
+                }
+            }
+        }
+        .submit{
+            display: grid;
+            gap: 15px;
+            grid-template-columns: repeat(2, 1fr);
+            // width: 100%;
+            margin-top: 30px;
+            justify-content: center;
+
+            input{
+                font-size: 1em;
+                padding: 10px;
+                max-width: 100px;
+                cursor: pointer;
+                border: 1px solid #1e1e1e;
+
+                &:focus, &:hover{
+                    border: 1px solid #fefefe;
+                    background: #1e1e1e;
+                    color: #fefefe;
+                }
+            }
+
+            .form-options{
+                display: grid;
+                text-align: right;
+                font-size: .8em;
+                align-content: center;
+                cursor: pointer;
+                // font-weight: 300;
+                
+                p{
+                    color: #fefefe;
+                    text-decoration: none;
+
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+       
+        @media(max-width: 920px){
+            align-content: center;
+            text-align: center;
+            min-width: 200px;
+            fieldset{
+                align-content: center;
+                text-align: center;
+
+                input{
+                    text-align: center;
+                }
+
+                span.line{
+                    &::after{
+                        margin: 15px auto;
+                    }
+                }
+            }
+
+            .submit{
+                grid-template-columns: 1fr;
+                text-align: center;
+
+                input{
+                    justify-self: center;
+                    min-width: 100px;
+                }
+                
+                .form-options{
+                    text-align: left;
+                    margin-top: 15px;
+                    justify-self: center;
+                }
+            }
+        }
+
+    }
+}

@@ -1,0 +1,25 @@
+.img-wrap{
+    position: relative;
+    .img{
+        max-width: 600px;
+        width: 100%;
+        // max-height: 300px;
+        // height: 300px;
+    }
+
+    @media(max-width: 920px){
+        padding: 20px!important;
+    }
+
+    .bounding-box{
+        position: absolute;        
+        // height: 100px;
+        // width: 100px;
+        box-shadow: 0 0 0 3px #149df2 inset;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        z-index: 1;
+        cursor: pointer;
+    }
+}
